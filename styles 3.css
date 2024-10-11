@@ -1,0 +1,222 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px 40px;
+    border-radius: 30px;
+    position: fixed;
+    top: 20px;
+    width: calc(100% - 80px);
+    margin: 0 40px;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.header-spacer {
+    height: 120px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo e imagen de perfil */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.profile-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.navbar h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Navegación */
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    position: relative;
+    padding: 5px 0;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 2px;
+    background-color: #007BFF;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+}
+
+.Ronald{
+    display: flex;
+    margin-top: 160px;
+    align-items: center;
+    justify-content: center;
+}
+
+.separador{
+    padding: 20px;
+}
+
+
+
+
+.cuadrito {
+    background: #fff;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cuadrito img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.cargo {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.nombre {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Estilos para los botones */
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer{
+    background-color: #24262B;
+    padding: 40px 0;
+    margin-top: 30px;
+}
+
+.footer-espacios{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.links{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.links h4{
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.links ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #bbbbbb;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+.links ul li a:hover{
+    color: #ffffff;
+    padding-left: 6px;
+}
+
+.social a{
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all .5s ease;
+}
+
+.social a:hover{
+    background-color: #007BFF
+}
+
+footer p.copyright {
+    color: #bbbbbb;
+    text-align: center;
+    margin-top: 20px;
+}

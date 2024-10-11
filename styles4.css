@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px 40px;
+    border-radius: 30px;
+    position: fixed;
+    top: 20px;
+    width: calc(100% - 80px);
+    margin: 0 40px;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.header-spacer {
+    height: 120px;
+}
+
+.container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo e imagen de perfil */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.profile-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.navbar h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Navegación */
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    position: relative;
+    padding: 5px 0;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 2px;
+    background-color: #007BFF;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+/* Estilo de la sección de contenido */
+section.contenido {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 160px; /* Espacio adicional arriba */
+    line-height: 1.6;
+}
+
+/* Título de la historia */
+section.contenido h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #2980b9;
+}
+
+/* Párrafos del texto */
+section.contenido p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    text-align: justify;
+    color: #555;
+}
+
+
+
+body{
+    background-color: #f4f4f4;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    line-height: 1.6;
+}
+
+
+
+.news-section{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.news-article{
+    width: 48%;
+    margin: 1%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.news-article img{
+    width: 100%;
+}
+
+.news-article .content{
+    padding: 20px;
+}
+
+.news-article h3{
+    margin-top: 0px;
+}
+
+.news-article p{
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.news-article a{
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer{
+    background-color: #24262B;
+    padding: 40px 0;
+    margin-top: 20px;
+}
+
+.footer-espacios{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.links{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.links h4{
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.links ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #bbbbbb;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+.links ul li a:hover{
+    color: #ffffff;
+    padding-left: 6px;
+}
+
+.social a{
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all .5s ease;
+}
+
+.social a:hover{
+    background-color: #007BFF
+}
+
+footer p.copyright {
+    color: #bbbbbb;
+    text-align: center;
+    margin-top: 20px;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
